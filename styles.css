@@ -9,11 +9,49 @@ html {
   /* We use 62.5% that is equal 10px in a responsive way = easier to use rem */
 }
 
-body {
-}
-
 :root {
   --almost-white: hsl(0, 0%, 98%);
   --medium-gray: hsl(0, 0%, 41%);
   --almost-black: hsl(0, 0%, 8%);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  column-gap: 10px;
+}
+
+.heading-primary {
+  font-size: 80px;
+  line-height: 1;
+
+  /* edit margin later */
+}
+
+.img-person {
+  width: 100%;
+  height: 100%;
+}
+
+.container-right {
+  margin: 10px;
+}
+
+@media (max-width: 990px) {
+  .navbar-collapse {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 10px; /* Optional: Add space between each menu item */
+  }
+  .hide {
+    display: none;
+  }
 }
