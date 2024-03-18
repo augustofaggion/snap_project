@@ -9,34 +9,77 @@ html {
   /* We use 62.5% that is equal 10px in a responsive way = easier to use rem */
 }
 
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
 :root {
   --almost-white: hsl(0, 0%, 98%);
   --medium-gray: hsl(0, 0%, 41%);
   --almost-black: hsl(0, 0%, 8%);
 }
 
+.nav-item {
+  font-size: 1.4rem;
+  padding: 0 3rem;
+}
+
+.dropdown-item {
+  font-size: 1.2rem;
+}
+.icon {
+  padding-right: 1.5rem;
+}
+
+.active {
+  border: 1px solid var(--almost-black);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
+  
   column-gap: 10px;
+}
+.container-right {
+  margin: 8rem;
 }
 
 .heading-primary {
-  font-size: 80px;
+  font-size: 9rem;
   line-height: 1;
+}
 
-  /* edit margin later */
+.paragraph{
+  font-size: 2rem;
+  margin: 4rem 0;
 }
 
 .img-person {
   width: 100%;
-  height: 100%;
+  height: ;
 }
 
-.container-right {
-  margin: 10px;
+.btn{
+  font-size: 2rem;
+  border-radius: 15px;
+  padding: 1rem 2rem;
 }
+
+.logos-companies{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.img-logo{
+  width: 100%;
+}
+
+
 
 @media (max-width: 990px) {
   .navbar-collapse {
@@ -54,4 +97,14 @@ html {
   .hide {
     display: none;
   }
+}
+
+@media (max-width: 59em){
+  html{
+    font-size: 52.5%;
+  }
+
+ .img-logo{
+  width: 20%;
+ }
 }
