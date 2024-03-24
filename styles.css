@@ -40,7 +40,6 @@ body {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
   column-gap: 10px;
 }
 .container-right {
@@ -52,34 +51,34 @@ body {
   line-height: 1;
 }
 
-.paragraph{
+.paragraph {
   font-size: 2rem;
   margin: 4rem 0;
 }
 
-.img-person {
-  width: 100%;
-  height: ;
-}
-
-.btn{
+.btn {
   font-size: 2rem;
   border-radius: 15px;
   padding: 1rem 2rem;
 }
 
-.logos-companies{
+.logos-companies {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 5rem;
 }
 
-.img-logo{
+.img-logo {
   width: 100%;
+  margin: 10rem 2rem;
 }
 
-
+.img-person {
+  display: block;
+  max-width: 100%;
+  height: 70%;
+}
 
 @media (max-width: 990px) {
   .navbar-collapse {
@@ -99,12 +98,35 @@ body {
   }
 }
 
-@media (max-width: 59em){
-  html{
-    font-size: 52.5%;
+@media (max-width: 59em) {
+  html {
+    font-size: 42.5%;
   }
 
- .img-logo{
-  width: 20%;
- }
+  .img-logo {
+    width: 20%;
+  }
+
+  .container-right {
+    margin: 4rem;
+  }
+
+  .img-logo {
+    width: 20%;
+    margin: 3rem 0rem;
+  }
+
+  .img-person {
+    height: 90%;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 22.5%;
+  }
+
+  .navbar-brand img {
+    width: 40%;
+  }
 }
